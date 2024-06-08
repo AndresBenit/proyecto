@@ -1,0 +1,202 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #1F1F1F;
+    text-align: center;
+    padding: 1em 0;
+    border-bottom: 2px solid #FFD700;
+}
+
+header h1, footer p {
+    margin: 0;
+    color: #FFD700;
+    font-size: 1.5em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1F1F1F;
+    border-bottom: 1px solid #FFD700;
+    position: relative;
+    z-index: 10;
+}
+
+nav a {
+    padding: 14px 20px;
+    color: #FFD700;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #FFD700;
+    color: #1F1F1F;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    background-color: #000; /* O el color de fondo que prefieras */
+    position: relative;
+    z-index: 1;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; /* Asegura que la imagen se ajuste bien sin distorsionarse */
+}
+
+.carousel-text {
+    position: absolute;
+    text-align: center;
+    color: #FFD700;
+    font-size: 1.5em;
+}
+
+.section {
+    padding: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.section h2 {
+    color: #FFD700;
+    margin-bottom: 0.5em;
+}
+
+.menu-item {
+    margin-bottom: 1em;
+    border: 1px solid #FFD700;
+    padding: 1em;
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #2A2A2A;
+    transform: scale(1.02);
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.menu-item img:hover {
+    transform: scale(1.05);
+}
+
+section.login, section.admin {
+    max-width: 500px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #FFD700;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"], input[type="url"], input[type="tel"], input[type="date"], input[type="time"], textarea {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #E0E0E0;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="url"]:focus, input[type="tel"]:focus, input[type="date"]:focus, input[type="time"]:focus, textarea:focus {
+    border-color: #FFD700;
+    background-color: #444;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75em;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    color: #1F1F1F;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #FFC300;
+    color: #1F1F1F;
+}
+
+.delete-dish {
+    background-color: #FF4C4C;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-dish:hover {
+    background-color: #FF1A1A;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        height: 200px;
+    }
+
+    .carousel img {
+        height: 100%;
+    }
+}
+
+form {
+    margin-bottom: 2em;
+}
+
+input, textarea, button {
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    background-color: #1F1F1F;
+    color: #E0E0E0;
+}
+
+button {
+    background-color: #FFD700;
+    color: #1F1F1F;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #1F1F1F;
+}
